@@ -35,3 +35,8 @@ pipeline {
              docker push ${AWS_ACCOUNT_ID}.dkr.ecr.eu-central-1.amazonaws.com/myapp:latest
              
              helm install jenkins-deploy-myapp -f ./helm-myapp/values.yaml ./helm-myapp/.             
+
+       }
+   }
+
+}
