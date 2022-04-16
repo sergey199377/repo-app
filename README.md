@@ -1,12 +1,12 @@
 # Containerized Application for calculate the factorial 
 
-Repository contains: 
+### Repository contains: 
 
-Application code with dockerfile - (index.html, Dockerfile)
-Helm chart for Jenkins deploying - (./helm-myapp)
-Jenkinsfile
+  - Application code with dockerfile - (index.html, Dockerfile)
+  - Helm chart for Jenkins deploying - (./helm-myapp)
+  - Jenkinsfile
 
-Main settings:
+### Main settings:
 
-./Jenkinsfile
-./helm-myapp/values.yaml
+  - ./Jenkinsfile
+  - ./helm-myapp/values.yaml
