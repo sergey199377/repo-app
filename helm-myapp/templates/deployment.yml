@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Name }}
+spec:
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: {{ .Values.container.labels }}
+  replicas: 3
+  template: 
+    metadata:
+      labels:
+        app: {{ .Values.container.labels }}
+    spec:
+      containers:
+      - name: {{ .Values.container.name }}
+        image: {{ .Values.container.image }}
+        ports:
+        - containerPort: 80
