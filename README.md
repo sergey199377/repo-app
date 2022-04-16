@@ -10,3 +10,7 @@
 
   - ./Jenkinsfile
   - ./helm-myapp/values.yaml
+
+
+
+author: Sergey Zamashnoi
